@@ -43,7 +43,7 @@ function smtp_activation() {
     
     // Default options
     $smtp_options = array (
-        'host' => 'http://localhost',
+        'host' => 'localhost',
         'port' => '25',
         'smtp_secure' => '',
         'username' => '',

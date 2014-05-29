@@ -1,10 +1,10 @@
 === SMTP ===
-Contributors: hel.io
+Contributors: hel.io, qrawl
 Donate link: http://hel.io/donate/
 Tags: smtp, email, mail, wp_mail, mailer, phpmailer
 Requires at least: 3.0
-Tested up to: 3.3.2
-Stable tag: 1.1.2
+Tested up to: 3.9.1
+Stable tag: 1.2
 
 Allows you to configure and use a SMTP server (such as Gmail) for sending emails.
 
@@ -46,9 +46,15 @@ Password: gmail password
 
 == Changelog ==
 
-= 1.0 =
-* Initial release.
+= 1.2 =
+* Sender's name and address are now the blog name and the admin email
+* More consistent form input types in settings page
+* Italian translation
+* Updated compatibility tag to Wordpress 3.9.1
 
 = 1.1 =
 * The password field is of type password instead of text and does not display your saved password 
 * Now storing encrypted passwords in the database (Make sure you re-enter your password if you are updating)
+
+= 1.0 =
+* Initial release.

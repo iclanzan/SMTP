@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: SMTP
-Version: 2.0
+Version: 1.2
 Plugin URI: http://hel.io/wordpress/SMTP
-Description: Allows you to configure and use a SMTP server (such as Gmail or Mailgun) for sending emails.
+Description: Allows you to configure and use a SMTP server (such as Gmail) for sending emails.
 Author: Sorin Iclanzan
 Author URI: http://hel.io/
 Text Domain: smtp

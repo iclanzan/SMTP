@@ -1,0 +1,142 @@
+# Copyright (C) 2012 SMTP
+# This file is distributed under the same license as the SMTP package.
+msgid ""
+msgstr ""
+"Project-Id-Version: SMTP 1.1.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/smtp\n"
+"POT-Creation-Date: 2012-06-11 21:49:56+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-05-29 10:46+0100\n"
+"Last-Translator: Pierre Prinetti\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 1.6.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: it\n"
+
+#: smtp.php:35
+msgid "Please enable 'php_mycrypt' in PHP. It is needed to encrypt passwords."
+msgstr ""
+"Abilitare il modulo PHP 'php_mycrypt' per permettere la cifratura delle "
+"password."
+
+#: smtp.php:61 smtp.php:111
+msgid "SMTP Settings"
+msgstr "Impostazioni SMTP"
+
+#. Plugin Name of the plugin/theme
+#: smtp.php:61
+msgid "SMTP"
+msgstr "SMTP"
+
+#: smtp.php:70 smtp.php:145
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: smtp.php:84
+msgid "SMTP Test"
+msgstr "Test SMTP"
+
+#: smtp.php:85
+msgid ""
+"If you received this email it means you have configured SMTP correctly on "
+"your Wordpress website."
+msgstr ""
+"Se hai ricevuto questa mail, significa che SMTP è correttamente configurato "
+"sul tuo sito Wordpress."
+
+#: smtp.php:94
+msgid "Test Email Sent"
+msgstr "Email di prova inviata"
+
+#: smtp.php:95
+msgid "The test email was sent successfully!"
+msgstr "L'email di prova è stata correttamente inviata."
+
+#: smtp.php:102
+msgid "Send Error"
+msgstr "Errore di trasmissione"
+
+#: smtp.php:103
+msgid ""
+"There was an error while trying to send the test email. Please check the "
+"connection details."
+msgstr ""
+"Si è verificato un errore nell'invio dell'email. Verificare le impostazioni."
+
+#: smtp.php:117
+msgid "Save Changes"
+msgstr "Salva"
+
+#: smtp.php:121
+msgid "Send a Test Email"
+msgstr "Invia una email di prova"
+
+#: smtp.php:122
+msgid "Enter an email address below to send a test message."
+msgstr "Inserisci un indirizzo email per inviare un'email di prova."
+
+#: smtp.php:126
+msgid "To:"
+msgstr "A:"
+
+#: smtp.php:133
+msgid "Send"
+msgstr "Invia"
+
+#: smtp.php:146
+msgid "Host"
+msgstr "Host"
+
+#: smtp.php:147
+msgid "Encryption"
+msgstr "Cifratura"
+
+#: smtp.php:148
+msgid "Username"
+msgstr "Nome utente"
+
+#: smtp.php:149
+msgid "Password"
+msgstr "Password"
+
+#: smtp.php:153
+msgid "Please enter your SMTP connection details."
+msgstr "Inserire le impostazioni di connessione per SMTP"
+
+#: smtp.php:160
+msgid "Port"
+msgstr "Porta"
+
+#: smtp.php:168
+msgid "None"
+msgstr "Nessuno"
+
+#: smtp.php:169
+msgid "SSL"
+msgstr "SSL"
+
+#: smtp.php:170
+msgid "TLS"
+msgstr "TLS"
+
+#. Plugin URI of the plugin/theme
+msgid "http://hel.io/wordpress/smtp/"
+msgstr "http://hel.io/wordpress/smtp/"
+
+#. Description of the plugin/theme
+msgid ""
+"Allows you to configure and use a SMTP server (such as Gmail) for sending "
+"emails."
+msgstr ""
+"Permette la configurazione di un server SMTP per l'utilizzo di un servizio "
+"esterno di posta, come GMail oppure Mailgun."
+
+#. Author of the plugin/theme
+msgid "Sorin Iclanzan"
+msgstr "Sorin Iclanzan"
+
+#. Author URI of the plugin/theme
+msgid "http://hel.io/"
+msgstr "http://hel.io/"

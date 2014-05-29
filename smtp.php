@@ -125,7 +125,7 @@ function smtp_options_page() {
                 <tr valign="top">
                 <th scope="row"><label for="to"><?php _e('To:', TEXT_DOMAIN ); ?></label></th>
                     <td>
-                        <input name="to" type="text" id="to" value="" class="regular-text" />
+                        <input name="to" type="email" id="to" value="" class="regular-text" />
                     </td>
                 </tr>
             </table>
@@ -156,9 +156,9 @@ function smtp_section() {
 function smtp_host() {
     $options = get_option('smtp_options');
     echo "
-        <input id='host' name='smtp_options[host]' type='text' class='regular-text' value='{$options['host']}' />
+        <input id='host' name='smtp_options[host]' type='url' class='regular-text' value='{$options['host']}' />
         <label for='port'>" . __( 'Port', TEXT_DOMAIN ) . "</label>
-        <input id='port' name='smtp_options[port]' type='text' class='small-text' value='{$options['port']}' />
+        <input id='port' name='smtp_options[port]' type='number' class='small-text' value='{$options['port']}' />
     ";
 }
 
@@ -173,14 +173,16 @@ function smtp_encryption() {
 
 function smtp_username() {
     $options = get_option('smtp_options');
-    echo "<input id='username' name='smtp_options[username]' type='text' class='regular-text' value='{$options['username']}' />";
+    echo "<input id='username' name='smtp_options[username]' type='text' class='regular-text' value='{$options['username']}' />
+    ";
 }
 function smtp_password() {
     $options = get_option('smtp_options');
     $placeholder = '';
     if ( $options['password'] )
         $placeholder = '&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;';
-    echo "<input id='password' name='smtp_options[password]' type='password' class='regular-text' value='' placeholder='{$placeholder}' />";
+    echo "<input id='password' name='smtp_options[password]' type='password' class='regular-text' value='' placeholder='{$placeholder}' />
+    ";
 }
 
 function smtp_options_validate($input) {

@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: SMTP
-Version: 1.1.2
-Plugin URI: http://hel.io/wordpress/smtp/
-Description: Allows you to configure and use a SMTP server (such as Gmail) for sending emails.
+Version: 2.0
+Plugin URI: http://hel.io/wordpress/SMTP
+Description: Allows you to configure and use a SMTP server (such as Gmail or Mailgun) for sending emails.
 Author: Sorin Iclanzan
 Author URI: http://hel.io/
 Text Domain: smtp
@@ -229,16 +229,15 @@ add_action('phpmailer_init','smtp_phpmailer_init');
 function smtp_phpmailer_init($phpmailer) {
         
     $smtp_options = get_option('smtp_options');
-    $admin_info = get_userdata(1);
     
     // Set Mailer value
     $phpmailer->Mailer = 'smtp';
     
     // Set From value
-    $phpmailer->From = $admin_info->user_email;
+    $phpmailer->From = get_option('admin_email');
     
     // Set FromName value
-    $phpmailer->FromName = $admin_info->display_name;
+    $phpmailer->FromName = get_option('blogname');
     
     // Set SMTPSecure value
     $phpmailer->SMTPSecure = $smtp_options['smtp_secure'];
